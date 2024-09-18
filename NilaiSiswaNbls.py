@@ -68,7 +68,7 @@ def view_menu():
 
 def read_menu():
     menu = {
-        'MENU MENAMPILKAN SELURUH ATAU SEBAGIAN DATA SISWA' : ['1. Menampilkan Semua Data Siswa\n2. Data Siswa Berdasarkan NISN\n3. Kembali ke Menu Utama']
+        'MENU MENAMPILKAN SELURUH ATAU SEBAGIAN DATA SISWA' : ['[1] Menampilkan Semua Data Siswa\n[2] Data Siswa Berdasarkan NISN\n[3] Kembali ke Menu Utama']
     }
     print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
 
@@ -92,7 +92,7 @@ def read_menu():
                     print(f'\nBerikut adalah Data Siswa dengan NISN {nomor}')
                     print(f'''
     NISN : {data_update['nisn']}
-    Nama Lengkap : {data_update['nama']}
+    Nama : {data_update['nama']}
     Kelas : {data_update['kelas']}
     Nilai Tugas : {data_update['nilaitugas']}
     Nilai UTS : {data_update['nilaiuts']}
@@ -112,7 +112,7 @@ def read_menu():
 
 def add_menu():
     menu = {
-        'MENU MENAMBAHKAN DATA SISWA' : ['1. Menambahkan Data Siswa\n2. Kembali ke Menu Utama']
+        'MENU MENAMBAHKAN DATA SISWA' : ['[1] Menambahkan Data Siswa\n[2] Kembali ke Menu Utama']
     }
     print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
 
@@ -147,7 +147,7 @@ def change_menu():
     while True:
         try:
             menu = {
-                'MENU MENGUBAH DATA SISWA' : ['1. Mengubah Data Siswa\n2. Kembali ke Menu Utama']
+                'MENU MENGUBAH DATA SISWA' : ['[1] Mengubah Data Siswa\n[2] Kembali ke Menu Utama']
             }
             print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
             
@@ -163,7 +163,7 @@ def change_menu():
                         # Menampilkan Data Lengkap Siswa Terlebih Dahulu
                         data = {
                             'NISN' : {data_update['nisn']},
-                            'Nama Lengkap': {data_update['nama']},
+                            'Nama': {data_update['nama']},
                             'Kelas' : {data_update['kelas']},
                             'Nilai Tugas' : {data_update['nilaitugas']}, 
                             'Nilai UTS' : {data_update['nilaiuts']},
@@ -174,7 +174,7 @@ def change_menu():
                         # Proses Update Data
                         update = input('\nApakah Anda Ingin Meng-update Data Siswa (Ya/Tidak)? ').upper()
                         if update == 'YA':
-                            ganti_data= input('\nSilakan Pilih Salah Satu Subjek yang Ingin Diganti (NISN/Nama Lengkap/Kelas/Nilai Tugas/Nilai UTS/Nilai UAS): ').lower()
+                            ganti_data= input('\nSilakan Pilih Salah Satu Subjek yang Ingin Diganti (NISN/Nama/Kelas/Nilai Tugas/Nilai UTS/Nilai UAS): ').lower()
                             if ganti_data.replace(' ','').lower() in dataSiswa_update[0].keys():
                                 if ganti_data == 'nisn':
                                     input_nisn()
@@ -216,7 +216,7 @@ def delete_menu():
     while True:
         try:
             menu = {
-                'MENU MENGHAPUS DATA SISWA' : ['1. Menghapus Data Siswa\n2. Kembali ke Menu Utama']
+                'MENU MENGHAPUS DATA SISWA' : ['[1] Menghapus Data Siswa\n[2] Kembali ke Menu Utama']
             }
             print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
 
@@ -232,7 +232,7 @@ def delete_menu():
                             print('\nDATA SISWA')
                             data = {
                             'NISN' : {data_update['nisn']},
-                            'Nama Lengkap': {data_update['nama']},
+                            'Nama': {data_update['nama']},
                             'Kelas' : {data_update['kelas']},
                             'Nilai Tugas' : {data_update['nilaitugas']}, 
                             'Nilai UTS' : {data_update['nilaiuts']}, 
@@ -259,7 +259,7 @@ def final_menu():
     while True:
         try:
             menu = {
-                'MENU INFORMASI NILAI AKHIR SISWA' : ['1. Informasi Nilai Akhir Siswa\n2. Kembali ke Menu Utama']
+                'MENU INFORMASI NILAI AKHIR SISWA' : ['[1] Informasi Nilai Akhir Siswa\n[2] Kembali ke Menu Utama']
             }
             print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
             
@@ -274,7 +274,7 @@ def final_menu():
                         nilai_akhir = (25/100) * int(data_update['nilaitugas']) + (35/100) * int(data_update['nilaiuts']) + (40/100) * int(data_update['nilaiuas'])
                         data = {
                             'NISN' : {data_update['nisn']},
-                            'Nama Lengkap': {data_update['nama']},
+                            'Nama': {data_update['nama']},
                             'Kelas' : {data_update['kelas']},
                             'Nilai Tugas' : {data_update['nilaitugas']}, 
                             'Nilai UTS' : {data_update['nilaiuts']}, 
@@ -311,7 +311,7 @@ def cek_nama():
 def cek_kelas():
     while True:
         global kelas_baru
-        kelas_baru = input('\nSilakan Masukkan Kelas Siswa (MIA 1/MIA 2/MIA): ')
+        kelas_baru = input('\nSilakan Masukkan Kelas Siswa (MIA 1/MIA 2/MIA 3): ')
         if kelas_baru.replace(' ','') == 'MIA 1' or 'MIA 2' or 'MIA 3' :
             return(kelas_baru)
             break
@@ -388,7 +388,7 @@ def menu_utama():
     
     menu = {
                 'Program Data Nilai Siswa Mata Pelajaran IPA (Semester Genap) SMAN 17 Makassar' : 
-                ['1. Menampilkan Seluruh Data Siswa\n2. Menambahkan Data Siswa\n3. Mengubah Data Siswa\n4. Menghapus Data Siswa\n5. Informasi Nilai Akhir Siswa\n6. Keluar / Exit']
+                ['[1] Menampilkan Seluruh Data Siswa\n[2] Menambahkan Data Siswa\n[3] Mengubah Data Siswa\n[4] Menghapus Data Siswa\n[5] Informasi Nilai Akhir Siswa\n[6] Keluar / Exit']
             }
     print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
     
