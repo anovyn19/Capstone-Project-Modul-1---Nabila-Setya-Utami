@@ -9,75 +9,52 @@ from tabulate import tabulate
 
 dataSiswa = [
     {
-        'NISN':20241001, 
-        'Nama':'Azzahra Zalfa', 
-        'Kelas Siswa': 'MIA 1', 
-        'NilaiTugas': 83, 
-        'NilaiUTS': 64, 
-        'NilaiUAS': 77
+        'nisn':20241001, 
+        'nama':'Azzahra Zalfa', 
+        'kelas': 'MIA 1', 
+        'nilaitugas': 83, 
+        'nilaiuts': 64, 
+        'nilaiuas': 77
     },
     {
-        'NISN':20231777, 
-        'Nama':'Dinda Ismayanti', 
-        'Kelas Siswa':'MIA 2', 
-        'NilaiTugas': 80, 
-        'NilaiUTS': 67, 
-        'NilaiUAS': 89
+        'nisn':20234568, 
+        'nama':'Dinda Ismayanti', 
+        'kelas':'MIA 2', 
+        'nilaitugas': 80, 
+        'nilaiuts': 67, 
+        'nilaiuas': 89
     },
     {
-        'NISN':20221835, 
-        'Nama':'Andi Ary Jindar', 
-        'Kelas Siswa': 'MIA 2', 
-        'NilaiTugas': 75, 
-        'NilaiUTS': 55, 
-        'NilaiUAS': 80
+        'nisn':20221835, 
+        'nama':'Andi Ary Jindar', 
+        'kelas': 'MIA 2', 
+        'nilaitugas': 75, 
+        'nilaiuts': 55, 
+        'nilaiuas': 80
     },
     {
-        'NISN':20211019, 
-        'Nama':'Isabela Utami',  
-        'Kelas Siswa': 'MIA 3', 
-        'NilaiTugas': 90, 
-        'NilaiUTS': 87, 
-        'NilaiUAS': 93
+        'nisn':20211019, 
+        'nama':'Isabela Utami',  
+        'kelas': 'MIA 3', 
+        'nilaitugas': 90, 
+        'nilaiuts': 87, 
+        'nilaiuas': 93
     },
     {
-        'NISN':20211011, 
-        'Nama':'Muh Abdullah Rasyad', 
-        'Kelas Siswa': 'MIA 3', 
-        'NilaiTugas': 80, 
-        'NilaiUTS': 83, 
-        'NilaiUAS': 88
+        'nisn':20211011, 
+        'nama':'Muh Abdullah Rasyad', 
+        'kelas': 'MIA 3', 
+        'nilaitugas': 80, 
+        'nilaiuts': 83, 
+        'nilaiuas': 88
     }
 ]
 
 dataSiswa_update = dataSiswa.copy()
-nomor = 0 
+nomor = 0
 
-# Fungsi Input NISN
-def input_nisn():
-    while True:
-        global nomor
-        nomor = input('\nMasukkan NISN / Nomor Induk Siswa Nasional (8 Digit): ')
-        if nomor.isdigit() == True:
-            if int(len(nomor)) != 8:
-                print('\nMaaf, NISN (Nomor Induk Siswa Nasional) Harus Terdiri dari 8 Angka')
-            else:
-                nomor = int(nomor)
-            break
-        else:
-            print('\nMaaf, NISN (Nomor Induk Siswa Nasional) Harus Terdiri dari 8 Angka') 
-
-# Fungsi Inputan Tidak Sesuai
-def wrong_choice():
-    print('\nMaaf, Pilihan yang Anda Masukkan Salah 🙏🏻')
-
-# Fungsi Data Kosong
-def data_kosong():
-    print('\nMaaf, Data Siswa yang Anda Masukkan Tidak Ada 🙏🏻')   
-
-
-# <><><><><><><><><><><><><><><><><><><><><><><><><> Bagian Menu 1 --> Menampilkan Seluruh atau Sebagian Data <><><><><><><><><><><><><><><><><><><><><><><><>
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> MENAMPILKAN DATA SISWA <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> MENAMPILKAN DATA SISWA ✅ <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> Menampilkan Seluruh atau Sebagian Data <><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 #Fungsi Menampilkan Seluruh Data
 def view_menu():
@@ -111,18 +88,18 @@ def read_menu():
         else:
             input_nisn()
             for data_update in dataSiswa_update:
-                if data_update['NISN'] == nomor:
+                if data_update['nisn'] == nomor:
                     print(f'\nBerikut adalah Data Siswa dengan NISN {nomor}')
                     print(f'''
-    NISN : {data_update['NISN']}
-    Nama Lengkap : {data_update['Nama']}
-    Kelas : {data_update['Kelas Siswa']}
-    Nilai Tugas : {data_update['NilaiTugas']}
-    Nilai UTS : {data_update['NilaiUTS']}
-    Nilai UAS : {data_update['NilaiUAS']}    
+    NISN : {data_update['nisn']}
+    Nama Lengkap : {data_update['nama']}
+    Kelas : {data_update['kelas']}
+    Nilai Tugas : {data_update['nilaitugas']}
+    Nilai UTS : {data_update['nilaiuts']}
+    Nilai UAS : {data_update['nilaiuas']}    
                     ''')
-                break
-            if data_update['NISN'] != nomor:
+                    break
+            if data_update['nisn'] != nomor:
                 data_kosong()
             read_menu()
     elif baca_data == '3':
@@ -130,6 +107,196 @@ def read_menu():
     else:
         wrong_choice()
         read_menu()
+
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> MENAMBAHKAN DATA SISWA ✅ <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+def add_menu():
+    menu = {
+        'MENU MENAMBAHKAN DATA SISWA' : ['1. Menambahkan Data Siswa\n2. Kembali ke Menu Utama']
+    }
+    print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
+
+    tambah_data = input('Silakan Pilih Salah Satu Menu (1/2): ')
+
+    if tambah_data == '1':
+        input_nisn()
+        for data_update in dataSiswa_update :
+            if data_update['nisn'] == nomor:
+                print(f'Maaf, Data dengan NISN {nomor} Sudah Tersedia.')
+                break
+        if data_update['nisn'] != nomor:
+            nama_lengkap = cek_nama().capitalize()
+            kelas_baru = cek_kelas()
+            nilai_tugas= cek_tugas()
+            nilai_uts = cek_uts()
+            nilai_uas= cek_uas()
+            
+            confirm = input('\nApakah Anda Ingin Menyimpan Data Baru Siswa Tersebut (Ya/Tidak)? ').upper()
+            if confirm == 'YA':
+                dataSiswa_update.append({'nisn': nomor, 'nama': nama_lengkap, 'kelas': kelas_baru, 'nilaitugas': nilai_tugas, 'nilaiuts': nilai_uts, 'nilaiuas': nilai_uas})
+                print('\nTerima Kasih, Data Anda Berhasil Disimpan ✅')
+        add_menu()
+    elif tambah_data == '2':
+        menu_utama()
+    else:
+        wrong_choice()
+        add_menu()
+
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> MENGUBAH DATA SISWA <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+def change_menu():
+    while True:
+        try:
+            menu = {
+                'MENU MENGUBAH DATA SISWA' : ['1. Mengubah Data Siswa\n2. Kembali ke Menu Utama']
+            }
+            print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
+            
+            ubah_data = input('Silakan Pilih Salah Satu Menu di Atas (1/2): ')
+
+            if ubah_data == '1':
+                input_nisn()
+                nomor_awal = nomor
+                ganti_data = ''
+                for data_update in dataSiswa_update:
+                    if data_update['nisn'] == nomor_awal:
+
+                        # Menampilkan Data Lengkap Siswa Terlebih Dahulu
+                        data = {
+                            'NISN' : {data_update['nisn']},
+                            'Nama Lengkap': {data_update['nama']},
+                            'Kelas' : {data_update['kelas']},
+                            'Nilai Tugas' : {data_update['nilaitugas']}, 
+                            'Nilai UTS' : {data_update['nilaiuts']},
+                            'Nilai UAS' : {data_update['nilaiuas']}
+                        }
+                        print(tabulate(data, headers = 'keys', tablefmt = 'fancy_grid'))
+
+                        # Proses Update Data
+                        update = input('\nApakah Anda Ingin Meng-update Data Siswa (Ya/Tidak)? ').upper()
+                        if update == 'YA':
+                            ganti_data= input('\nSilakan Pilih Salah Satu Subjek yang Ingin Diganti (NISN/Nama Lengkap/Kelas/Nilai Tugas/Nilai UTS/Nilai UAS): ').lower()
+                            if ganti_data.replace(' ','').lower() in dataSiswa_update[0].keys():
+                                if ganti_data == 'nisn':
+                                    input_nisn()
+                                    nisn_baru = nomor
+
+                                    # Memastikan Tidak Ada Duplikasi NISN
+                                    list_nomor = [data_update['nisn'] for data_update in dataSiswa_update]
+                                    while nisn_baru in list_nomor:
+                                        print('\nMaaf, NISN yang Anda Input Sudah Terpakai')
+                                        input_nisn()
+                                        nisn_baru= nomor
+                                else:
+                                    nisn_baru = input(f'\nMasukkan {ganti_data} baru: ')
+
+                                # Perintah Update Data
+                                confirm = input('\nApakah Anda Yakin Ingin Mengubah Data Siswa Tersebut (Ya/Tidak)? ').upper()
+                                if confirm == 'YA':
+                                    data_update[ganti_data.replace(' ','').lower()] = nisn_baru
+                                    print('\nTerima Kasih, Data Siswa Berhasil Diubah ✅')
+                            else:
+                                wrong_choice()
+                        break
+                if ganti_data != nomor:
+                    if data_update['nisn'] != nomor_awal:
+                        data_kosong()
+                change_menu()
+            elif ubah_data == '2':
+                menu_utama()  
+            else:
+                wrong_choice()
+                change_menu()
+        except:
+            print('\nMaaf, Data Siswa yang Anda Masukkan Tidak Ada 🙏🏻')
+            change_menu()
+        break
+
+# <><><><><><><><><><><><><><><><><><><><><><><><> MENGHAPUS DATA SISWA ✅ <><><><><><><><><><><><><><><><><><><><><><><><>
+def delete_menu():
+    while True:
+        try:
+            menu = {
+                'MENU MENGHAPUS DATA SISWA' : ['1. Menghapus Data Siswa\n2. Kembali ke Menu Utama']
+            }
+            print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
+
+            menu_delete = input('Silakan Pilih Salah Satu Menu di Atas (1/2): ')
+
+            if menu_delete == '1':
+                input_nisn()
+                for i, data_update in enumerate(dataSiswa_update):
+                    if data_update['nisn'] == nomor:
+                        delete = input(f'\nApakah Data Siswa dengan NISN {nomor} Akan Dihapus (Ya/Tidak)? ').upper()
+                        if delete == 'YA':
+                            del dataSiswa_update[i]
+                            print('\nDATA SISWA')
+                            data = {
+                            'NISN' : {data_update['nisn']},
+                            'Nama Lengkap': {data_update['nama']},
+                            'Kelas' : {data_update['kelas']},
+                            'Nilai Tugas' : {data_update['nilaitugas']}, 
+                            'Nilai UTS' : {data_update['nilaiuts']}, 
+                            'Nilai UAS' : {data_update['nilaiuas']}
+                        }
+                        print(tabulate(data, headers = 'keys', tablefmt = 'fancy_grid'))
+                        print('\nData Siswa Berhasil Dihapus ✅')
+                        break
+                if data_update['nisn'] != nomor:
+                    data_kosong()
+                delete_menu()
+            elif menu_delete == '2':
+                menu_utama()
+            else:
+                wrong_choice()
+                delete_menu()
+        except:
+            print('\nMaaf, Data Siswa yang Anda Masukkan Tidak Ada 🙏🏻')
+            delete_menu()
+        break
+
+# <><><><><><><><><><><><><><><><><><><><><><><><> INFORMASI NILAI AKHIR SISWA ✅ <><><><><><><><><><><><><><><><><><><><><><><><>
+def final_menu():
+    while True:
+        try:
+            menu = {
+                'MENU INFORMASI NILAI AKHIR SISWA' : ['1. Informasi Nilai Akhir Siswa\n2. Kembali ke Menu Utama']
+            }
+            print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
+            
+            nilai_akhir = input('Silakan Pilih Sub Menu di Atas (1/2): ')
+
+            # Menghitung Nilai Akhir Siswa
+            if nilai_akhir == '1':
+                input_nisn()
+                for data_update in dataSiswa_update:
+                    if data_update['nisn'] == nomor:
+                        #Perhitungan Nilai Akhir Siswa
+                        nilai_akhir = (25/100) * int(data_update['nilaitugas']) + (35/100) * int(data_update['nilaiuts']) + (40/100) * int(data_update['nilaiuas'])
+                        data = {
+                            'NISN' : {data_update['nisn']},
+                            'Nama Lengkap': {data_update['nama']},
+                            'Kelas' : {data_update['kelas']},
+                            'Nilai Tugas' : {data_update['nilaitugas']}, 
+                            'Nilai UTS' : {data_update['nilaiuts']}, 
+                            'Nilai UAS' : {data_update['nilaiuas']},
+                            'Nilai Akhir' : {round(nilai_akhir,2)}
+                        }
+                        print(tabulate(data, headers = 'keys', tablefmt = 'fancy_grid'))
+                        break
+                if data_update['nisn'] != nomor:
+                    data_kosong()
+                final_menu()
+            elif nilai_akhir == '2':
+                menu_utama()
+            else: 
+                wrong_choice()
+                final_menu()
+        except:
+            print('\nMaaf, Data Siswa yang Anda Masukkan Tidak Ada 🙏🏻')
+            delete_menu()
+        break
+
+# <><><><><><><><><><><><><><><><><><><><><><><><> SEMUA FUNGSI FUNGSI <><><><><><><><><><><><><><><><><><><><><><><><>
 
 # Fungsi Cek Data Nama dan Kelas
 def cek_nama():
@@ -144,8 +311,8 @@ def cek_nama():
 def cek_kelas():
     while True:
         global kelas_baru
-        kelas_baru = input('\nSilakan Masukkan Kelas Siswa (cth: MIA 4): ')
-        if kelas_baru.replace(' ','') == True:
+        kelas_baru = input('\nSilakan Masukkan Kelas Siswa (MIA 1/MIA 2/MIA): ')
+        if kelas_baru.replace(' ','') == 'MIA 1' or 'MIA 2' or 'MIA 3' :
             return(kelas_baru)
             break
         print('\nMaaf, Inputan Anda Tidak Valid.\n Silakan Masukkan Ulang 🙏🏻😊.')  
@@ -191,194 +358,28 @@ def cek_uas():
                 print('\nMaaf, Nilai UAS Melebihi Batas.\nSilakan Masukan Ulang Nilai UAS Dengan Rentang (0-100) 🙏🏻😊')
         else: 
             print('\nMaaf, Data yang Anda Input Tidak Benar.\nSilakan Memasukkan Ulang Nilai UAS Siswa 🙏🏻😊')
-
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> MENAMBAHKAN DATA SISWA <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-
-def add_menu():
-    menu = {
-        'MENU MENAMBAHKAN DATA SISWA' : ['1. Menambahkan Data Siswa\n2. Kembali ke Menu Utama']
-    }
-    print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
-
-    tambah_data = input('Silakan Pilih Salah Satu Menu (1/2): ')
-
-    if tambah_data == '1':
-        input_nisn()
-        for data_update in dataSiswa_update :
-            if data_update['NISN'] == nomor:
-                print(f'Maaf, Data dengan NISN {nomor} Sudah Tersedia.')
-                break
-        if data_update['NISN'] != nomor:
-            nama_lengkap = cek_nama().capitalize()
-            kelas_baru = cek_kelas().capitalize()
-            nilai_tugas= cek_tugas()
-            nilai_uts = cek_uts()
-            nilai_uas= cek_uas()
             
-            confirm = input('\nApakah Anda Ingin Menyimpan Data Baru Siswa Tersebut (Ya/Tidak)? ').upper()
-            if confirm == 'YA':
-                dataSiswa_update.append({'NISN': nomor, 'Nama': nama_lengkap, 'Kelas Siswa': kelas_baru, 'NilaiTugas': nilai_tugas, 'NilaiUTS': nilai_uts, 'NilaiUAS': nilai_uas})
-                print('\nTerima Kasih, Data Anda Berhasil Disimpan ✅')
-        add_menu()
-    elif tambah_data == '2':
-        menu_utama()
-    else:
-        wrong_choice()
-        add_menu()
-
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> MENGUBAH DATA SISWA <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-def change_menu():
+# Fungsi Input NISN
+def input_nisn():
     while True:
-        try:
-            menu = {
-                'MENU MENGUBAH DATA SISWA' : ['1. Mengubah Data Siswa\n2. Kembali ke Menu Utama']
-            }
-            print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
-            
-            ubah_data = input('Silakan Pilih Salah Satu Menu di Atas (1/2): ')
-
-            if ubah_data == '1':
-                input_nisn()
-                nomor_awal = nomor
-                ganti_data = ''
-                for data_update in dataSiswa_update:
-                    if data_update['NISN'] == nomor_awal:
-
-                        # Menampilkan Data Lengkap Siswa Terlebih Dahulu
-                        data = {
-                            'NISN' : {data_update['NISN']},
-                            'Nama Lengkap ': {data_update['Nama']},
-                            'Kelas' : {data_update['Kelas Siswa']},
-                            'Nilai Tugas' : {data_update['NilaiTugas']}, 
-                            'Nilai UTS' : {data_update['NilaiUTS']}, 
-                            'Nilai UAS' : {data_update['NilaiUAS']}
-                        }
-                        print(tabulate(data, headers = 'keys', tablefmt = 'fancy_grid'))
-
-                        # Proses Update Data
-                        update = input('\nApakah Anda Ingin Meng-update Data Siswa (Ya/Tidak)? ').upper()
-                        if update == 'YA':
-                            ganti_data= input('\nSilakan Pilih Salah Satu Subjek yang Ingin Diganti (NISN/Nama Lengkap/Kelas/Nilai Tugas/Nilai UTS/Nilai UAS): ').upper()
-                            if ganti_data.replace(' ','').upper() in dataSiswa_update[0].keys():
-                                if ganti_data == 'NISN':
-                                    input_nisn()
-                                    nisn_baru = nomor
-
-                                    # Memastikan Tidak Ada Duplikasi NISN
-                                    list_nomor = [data_update['NISN'] for data_update in dataSiswa_update]
-                                    while nisn_baru in list_nomor:
-                                        print('\nMaaf, NISN yang Anda Input Sudah Terpakai')
-                                        input_nisn()
-                                        nisn_baru= nomor
-                                else:
-                                    nisn_baru = input(f'\nMasukkan {ganti_data} baru: ')
-
-                                # Perintah Update Data
-                                confirm = input('\nApakah Anda Yakin Ingin Mengubah Data Siswa Tersebut (Ya/Tidak)? ').upper()
-                                if confirm == 'YA':
-                                    data_update[ganti_data.replace(' ','').upper()] = nisn_baru
-                                    print('\nTerima Kasih, Data Siswa Berhasil Diubah ✅')
-                            else:
-                                wrong_choice()
-                        break
-                if ganti_data != nomor:
-                    if data_update['NISN'] != nomor_awal:
-                        data_kosong()
-                change_menu()
-            elif ubah_data == '2':
-                menu_utama()  
+        global nomor
+        nomor = input('\nMasukkan NISN / Nomor Induk Siswa Nasional (8 Digit): ')
+        if nomor.isdigit() == True:
+            if int(len(nomor)) != 8:
+                print('\nMaaf, NISN (Nomor Induk Siswa Nasional) Harus Terdiri dari 8 Angka')
             else:
-                wrong_choice()
-                change_menu()
-        except:
-            print('\nMaaf, Data Siswa yang Anda Masukkan Tidak Ada 🙏🏻')
-            change_menu()
-        break
+                nomor = int(nomor)
+            break
+        else:
+            print('\nMaaf, NISN (Nomor Induk Siswa Nasional) Harus Terdiri dari 8 Angka') 
 
-# <><><><><><><><><><><><><><><><><><><><><><><><> MENGHAPUS DATA SISWA <><><><><><><><><><><><><><><><><><><><><><><><>
-def delete_menu():
-    while True:
-        try:
-            menu = {
-                'MENU MENGHAPUS DATA SISWA' : ['1. Menghapus Data Siswa\n2. Kembali ke Menu Utama']
-            }
-            print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
+# Fungsi Inputan Tidak Sesuai
+def wrong_choice():
+    print('\nMaaf, Pilihan yang Anda Masukkan Salah 🙏🏻')
 
-            menu_delete = input('Silakan Pilih Salah Satu Menu di Atas (1/2): ')
-
-            if menu_delete == '1':
-                input_nisn()
-                for i, data_update in enumerate(dataSiswa_update):
-                    if data_update['NISN'] == nomor:
-                        delete = input(f'\nApakah Data Siswa dengan NISN {nomor} Akan Dihapus (Ya/Tidak)? ').upper()
-                        if delete == 'YA':
-                            del dataSiswa_update[i]
-                            print('\nDATA SISWA')
-                            data = {
-                            'NISN' : {data_update['NISN']},
-                            'Nama Lengkap ': {data_update['Nama']},
-                            'Kelas' : {data_update['Kelas Siswa']},
-                            'Nilai Tugas' : {data_update['NilaiTugas']}, 
-                            'Nilai UTS' : {data_update['NilaiUTS']}, 
-                            'Nilai UAS' : {data_update['NilaiUAS']}
-                        }
-                        print(tabulate(data, headers = 'keys', tablefmt = 'fancy_grid'))
-                        print('\nData Siswa Berhasil Dihapus ✅')
-                        break
-                if data_update['NISN'] != nomor:
-                    data_kosong()
-                delete_menu()
-            elif menu_delete == '2':
-                menu_utama()
-            else:
-                wrong_choice()
-                delete_menu()
-        except:
-            print('\nMaaf, Data Siswa yang Anda Masukkan Tidak Ada 🙏🏻')
-            delete_menu()
-        break
-
-# <><><><><><><><><><><><><><><><><><><><><><><><> INFORMASI NILAI AKHIR SISWA <><><><><><><><><><><><><><><><><><><><><><><><>
-def final_menu():
-    while True:
-        try:
-            menu = {
-                'MENU INFORMASI NILAI AKHIR SISWA' : ['1. Informasi Nilai Akhir Siswa\n2. Kembali ke Menu Utama']
-            }
-            print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
-            
-            nilai_akhir = input('Silakan Pilih Sub Menu di Atas (1/2): ')
-
-            # Menghitung Nilai Akhir Siswa
-            if nilai_akhir == '1':
-                input_nisn()
-                for data_update in dataSiswa_update:
-                    if data_update['NISN'] == nomor:
-                        #Perhitungan Nilai Akhir Siswa
-                        nilai_akhir = (25/100) * int(data_update['Nilai Tugas']) + (35/100) * int(data_update['Nilai UTS']) + (40/100) * int(data_update['Nilai UAS'])
-                        data = {
-                            'NISN' : {data_update['NISN']},
-                            'Nama Lengkap ': {data_update['Nama']},
-                            'Kelas' : {data_update['Kelas Siswa']},
-                            'Nilai Tugas' : {data_update['NilaiTugas']}, 
-                            'Nilai UTS' : {data_update['NilaiUTS']}, 
-                            'Nilai UAS' : {data_update['NilaiUAS']},
-                            'Nilai Akhir' : {round(nilai_akhir,2)}
-                        }
-                        print(tabulate(data, headers = 'keys', tablefmt = 'fancy_grid'))
-                        break
-                if data_update['NISN'] != nomor:
-                    data_kosong()
-                final_menu()
-            elif nilai_akhir == '2':
-                menu_utama()
-            else: 
-                wrong_choice()
-                final_menu()
-        except:
-            print('\nMaaf, Data Siswa yang Anda Masukkan Tidak Ada 🙏🏻')
-            delete_menu()
-        break
+# Fungsi Data Kosong
+def data_kosong():
+    print('\nMaaf, Data Siswa yang Anda Masukkan Tidak Ada 🙏🏻')   
 
 # <><><><><><><><><><><><><><><><><><><><><><><><> MENU UTAMA <><><><><><><><><><><><><><><><><><><><><><><><>
 
