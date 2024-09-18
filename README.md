@@ -15,4 +15,4 @@ User mampu menambahkan data siswa dengan memasukkan ke dalam dataset berupa NISN
 ### **Fitur Edit**
 Fitur ini mampu mengubah data yang telah ada menjadi data baru dengan cara memilih subjek data yang ingin diperbaharui, sehingga menampilkan informasi data baru yang telah di-*update*.
 ### **Fitur Delete**
-Apabila terdapat data yang ingin dihapus oleh user, fitur ini mampu menghapus data yang tersimpan sehingga data yang tidak diinginkan oleh user bisa tidak ditampilkan kembali di dalam program ini.
+Apabila terdapat data yang ingin dihapus oleh user, fitur ini mampu menghapus data yang tersimpan dengan memasukkan NISN / Nomor Induk Siswa Nasional maka data dari siswa tersebut akan terhapus.
