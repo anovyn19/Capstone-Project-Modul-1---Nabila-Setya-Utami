@@ -9,6 +9,7 @@
 - Tenaga Pendidik Lainnya
 
 ## **Menu Utama**
+Berikut tampilan menu utama dari program *Data Nilai Siswa Mata Pelajaran IPA (Semester Genap) SMAN 17 Makassar*. Pada menu ini user dapat memilih menu yang diinginkan yang terdiri dari 6 sub menu, dapat dilihat pada gambar di bawah ini. 
 ![image](https://github.com/user-attachments/assets/77cb2a7c-7f8d-4085-8819-83421e10ee3d)
 
 ## **Fitur Read**
