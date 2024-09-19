@@ -1,6 +1,7 @@
 # **Capstone Project Modul 1 (Data Nilai Siswa)**
 ## Nabila Setya Utami (JCDSOL-016)
-*Sebuah program yang dirancang untuk memudahkan user dalam mengakses data nilai siswa dalam kepentingan bidang akademik. Dalam hal ini mampu menampilkan keseluruhan dan sebagian nilai siswa, memperbaharui, menghapus, dan menambah data siswa. Serta mampu membantu memberikan perhitungan nilai akhir siswa dengan lebih cepat.*
+
+> *Sebuah program yang dirancang untuk memudahkan user dalam mengakses data nilai siswa dalam kepentingan bidang akademik. Dalam hal ini mampu menampilkan keseluruhan dan sebagian nilai siswa, memperbaharui, menghapus, dan menambah data siswa. Serta mampu membantu memberikan perhitungan nilai akhir siswa dengan lebih cepat.*
 
 ### Stakeholders
 - Guru
@@ -16,7 +17,7 @@ Berikut tampilan menu utama dari program *Data Nilai Siswa Mata Pelajaran IPA (S
 ## **Fitur-Fitur**
 ### **Fitur Read**
 Dalam fitur read ini, user dapat melihat keseluruhan data nilai siswa dan juga dapat melihat sebagian data siswa dengan menginput NISN / Nomor Induk Siswa Nasional yg ingin dilihat detail datanya pada program yang telah dibuat.
-1. Menampilkan Keseluruhan Data Siswa \n
+1. Menampilkan Keseluruhan Data Siswa 
 
    ![image](https://github.com/user-attachments/assets/049e6a2e-4f6e-4de7-81c6-8072c4e70523)
    ![image](https://github.com/user-attachments/assets/155b56c6-f40c-44b7-b969-d70fee18ad5d)
@@ -33,7 +34,8 @@ Sub menu ini menampilkan sebagian data siswa dengan memasukkan atau meng-*input*
 ### **Fitur Create**
 Pada fitur ini, disajikan program penambahan data siswa dengan memasukkan ke dalam dataset berupa NISN, nama siswa, kelas, nilai tugas, nilai uts, dan nilai uas yang belum pernah tersimpan di dalam dataset yang telah ada. Berikut tampilan dari fitur create atau add new data pada program Data Nilai Siswa.
 
-   ![image](https://github.com/user-attachments/assets/539749f0-a19d-4e31-b5d9-4e61bd801956) \n
+   ![image](https://github.com/user-attachments/assets/539749f0-a19d-4e31-b5d9-4e61bd801956)
+   
    ![image](https://github.com/user-attachments/assets/2b59f321-5e67-4be8-9837-a9ff30580cdf)
    ![image](https://github.com/user-attachments/assets/0ad31f46-0149-4ddd-b42f-80f58758e6a3)
 
@@ -41,8 +43,8 @@ Pada fitur ini, disajikan program penambahan data siswa dengan memasukkan ke dal
 ### **Fitur Edit**
 Fitur ini mampu mengubah, mengedit, atau meng-*update* data yang telah ada menjadi data baru dengan cara memilih subjek data yang ingin diperbaharui, sehingga menampilkan informasi data baru yang telah di-*update*. Dalam hal ini subjek yang bisa di ubah, yaitu nisn, nama, kelas, nilai tugas, nilai uts, dan nilai uas.
 
-1. Menu Tampilan Mengubah Data Siswa \n
-   ![image](https://github.com/user-attachments/assets/22aa0a9e-e4b8-4d8c-9c8a-c3a37811df75)
+1. Menu Tampilan Mengubah Data Siswa 
+      ![image](https://github.com/user-attachments/assets/22aa0a9e-e4b8-4d8c-9c8a-c3a37811df75)
    
 2. Tampilan Mengubah NISN Siswa
    ![image](https://github.com/user-attachments/assets/65809281-1473-4532-8a43-26b940f58df1)
