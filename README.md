@@ -16,7 +16,7 @@ Berikut tampilan menu utama dari program *Data Nilai Siswa Mata Pelajaran IPA (S
 ## **Fitur-Fitur**
 ### **Fitur Read**
 Dalam fitur read ini, user dapat melihat keseluruhan data nilai siswa dan juga dapat melihat sebagian data siswa dengan menginput NISN / Nomor Induk Siswa Nasional yg ingin dilihat detail datanya pada program yang telah dibuat.
-1. Menampilkan Keseluruhan Data Siswa
+1. Menampilkan Keseluruhan Data Siswa \n
 
    ![image](https://github.com/user-attachments/assets/049e6a2e-4f6e-4de7-81c6-8072c4e70523)
    ![image](https://github.com/user-attachments/assets/155b56c6-f40c-44b7-b969-d70fee18ad5d)
@@ -33,7 +33,7 @@ Sub menu ini menampilkan sebagian data siswa dengan memasukkan atau meng-*input*
 ### **Fitur Create**
 Pada fitur ini, disajikan program penambahan data siswa dengan memasukkan ke dalam dataset berupa NISN, nama siswa, kelas, nilai tugas, nilai uts, dan nilai uas yang belum pernah tersimpan di dalam dataset yang telah ada. Berikut tampilan dari fitur create atau add new data pada program Data Nilai Siswa.
 
-   ![image](https://github.com/user-attachments/assets/539749f0-a19d-4e31-b5d9-4e61bd801956)
+   ![image](https://github.com/user-attachments/assets/539749f0-a19d-4e31-b5d9-4e61bd801956) \n
    ![image](https://github.com/user-attachments/assets/2b59f321-5e67-4be8-9837-a9ff30580cdf)
    ![image](https://github.com/user-attachments/assets/0ad31f46-0149-4ddd-b42f-80f58758e6a3)
 
@@ -41,20 +41,27 @@ Pada fitur ini, disajikan program penambahan data siswa dengan memasukkan ke dal
 ### **Fitur Edit**
 Fitur ini mampu mengubah, mengedit, atau meng-*update* data yang telah ada menjadi data baru dengan cara memilih subjek data yang ingin diperbaharui, sehingga menampilkan informasi data baru yang telah di-*update*. Dalam hal ini subjek yang bisa di ubah, yaitu nisn, nama, kelas, nilai tugas, nilai uts, dan nilai uas.
 
-1. Menu Tampilan Mengubah Data Siswa
+1. Menu Tampilan Mengubah Data Siswa \n
    ![image](https://github.com/user-attachments/assets/22aa0a9e-e4b8-4d8c-9c8a-c3a37811df75)
+   
 2. Tampilan Mengubah NISN Siswa
    ![image](https://github.com/user-attachments/assets/65809281-1473-4532-8a43-26b940f58df1)
+   
 3. Tampilan Mengubah Nama Siswa
    ![image](https://github.com/user-attachments/assets/a6fc6e11-e338-43b3-81c5-ccf7cd7839d9)
+   
 4. Tampilan Mengubah Kelas Siswa
    ![image](https://github.com/user-attachments/assets/c887f26f-653b-48ad-a79d-abca067870ad)
+   
 5. Tampilan Mengubah Nilai Tugas Siswa
    ![image](https://github.com/user-attachments/assets/dde25d02-97ce-421b-a0f8-34cf4adb9387)
+   
 6. Tampilan Mengubah Nilai UTS Siswa
    ![image](https://github.com/user-attachments/assets/16b8b359-9e2d-45db-af17-00906af7e88c)
+   
 7. Tampilan Mengubah Nilai UAS Siswa
    ![image](https://github.com/user-attachments/assets/25518db4-8d33-4826-afef-a99b9de640ad)
+   
 8. Tampilan Keseluruhan Data yang Telah Diubah
    ![image](https://github.com/user-attachments/assets/d91dc46a-f6b4-4638-9b88-8b208d73e0d7)
 
