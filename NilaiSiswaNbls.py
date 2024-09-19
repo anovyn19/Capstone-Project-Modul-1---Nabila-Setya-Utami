@@ -68,7 +68,7 @@ def view_menu():
 
 def read_menu():
     menu = {
-        'MENU MENAMPILKAN SELURUH ATAU SEBAGIAN DATA SISWA' : ['[1] Menampilkan Semua Data Siswa\n[2] Data Siswa Berdasarkan NISN\n[3] Kembali ke Menu Utama']
+        'MENU MENAMPILKAN SELURUH ATAU SEBAGIAN DATA SISWA' : ['[1] Menampilkan Seluruh Data Siswa\n[2] Data Siswa Berdasarkan NISN\n[3] Kembali ke Menu Utama']
     }
     print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
 
@@ -125,7 +125,7 @@ def add_menu():
                 print(f'Maaf, Data dengan NISN {nomor} Sudah Tersedia.')
                 break
         if data_update['nisn'] != nomor:
-            nama_lengkap = cek_nama().capitalize()
+            nama_lengkap = cek_nama()
             kelas_baru = cek_kelas()
             nilai_tugas= cek_tugas()
             nilai_uts = cek_uts()
@@ -327,9 +327,9 @@ def cek_tugas():
                 return(nilai_tugas)
                 break
             else:
-                print('\nMaaf, Nilai Tugas Melebihi Batas.\nSilakan Masukan Ulang Nilai Tugas Dengan Rentang (0-100) 🙏🏻😊')
+                print('\nMaaf, Nilai Tugas Tidak Sesuai.\nSilakan Masukan Ulang Nilai Tugas Dengan Rentang (0-100) 🙏🏻😊')
         else: 
-            print('\nMaaf, Data yang Anda Input Tidak Benar.\nSilakan Memasukkan Ulang Nilai UTS Siswa 🙏🏻😊')
+            print('\nMaaf, Data yang Anda Input Tidak Benar.\nSilakan Memasukkan Ulang Nilai Tugas Siswa 🙏🏻😊')
 
 # Fungsi Cek Nilai UTS
 def cek_uts():
@@ -341,7 +341,7 @@ def cek_uts():
                 return(nilai_uts)
                 break
             else:
-                print('\nMaaf, Nilai UTS Melebihi Batas.\nSilakan Masukan Ulang Nilai UTS Dengan Rentang (0-100) 🙏🏻😊')
+                print('\nMaaf, Nilai UTS Tidak Sesuai.\nSilakan Masukan Ulang Nilai UTS Dengan Rentang (0-100) 🙏🏻😊')
         else: 
             print('\nMaaf, Data yang Anda Input Tidak Benar.\nSilakan Memasukkan Ulang Nilai UTS Siswa 🙏🏻😊')
 
@@ -355,7 +355,7 @@ def cek_uas():
                 return(nilai_uas)
                 break
             else:
-                print('\nMaaf, Nilai UAS Melebihi Batas.\nSilakan Masukan Ulang Nilai UAS Dengan Rentang (0-100) 🙏🏻😊')
+                print('\nMaaf, Nilai UAS Tidak Sesuai.\nSilakan Masukan Ulang Nilai UAS Dengan Rentang (0-100) 🙏🏻😊')
         else: 
             print('\nMaaf, Data yang Anda Input Tidak Benar.\nSilakan Memasukkan Ulang Nilai UAS Siswa 🙏🏻😊')
             
@@ -388,7 +388,7 @@ def menu_utama():
     
     menu = {
                 'Program Data Nilai Siswa Mata Pelajaran IPA (Semester Genap) SMAN 17 Makassar' : 
-                ['[1] Menampilkan Seluruh Data Siswa\n[2] Menambahkan Data Siswa\n[3] Mengubah Data Siswa\n[4] Menghapus Data Siswa\n[5] Informasi Nilai Akhir Siswa\n[6] Keluar / Exit']
+                ['[1] Menampilkan Data Siswa\n[2] Menambahkan Data Siswa\n[3] Mengubah Data Siswa\n[4] Menghapus Data Siswa\n[5] Informasi Nilai Akhir Siswa\n[6] Keluar / Exit']
             }
     print(tabulate(menu, headers = 'keys', tablefmt = 'fancy_grid'))
     
