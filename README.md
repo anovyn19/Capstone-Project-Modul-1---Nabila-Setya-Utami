@@ -17,15 +17,17 @@ Berikut tampilan menu utama dari program *Data Nilai Siswa Mata Pelajaran IPA (S
 ### **Fitur Read**
 Dalam fitur read ini, user dapat melihat keseluruhan data nilai siswa dan juga dapat melihat sebagian data siswa dengan menginput NISN / Nomor Induk Siswa Nasional yg ingin dilihat detail datanya pada program yang telah dibuat.
 1. Menampilkan Keseluruhan Data Siswa
+   
 ![image](https://github.com/user-attachments/assets/049e6a2e-4f6e-4de7-81c6-8072c4e70523)
 ![image](https://github.com/user-attachments/assets/155b56c6-f40c-44b7-b969-d70fee18ad5d)
+
 Pada bagian ini, user dapat melihat keseluruhan data siswa. Terdiri dari NISN, nama, kelas, nilai tugas, nilai uts, dan nilai uas. Nilai NISN di program ini sebagai kunci yang akan digunakan untuk melakukan tindakan selanjutnya pada program.
 2. Menampilkan Sebagian Data Siswa 
 
 ![image](https://github.com/user-attachments/assets/4dd225f0-bd38-44c5-86af-6a0fdb160acd)
-
 ![image](https://github.com/user-attachments/assets/a4edb366-fb1d-4655-ad90-0a41d13020e8)
 
+Sub menu ini menampilkan sebagian data siswa dengan memasukkan atau meng-*input* nisn siswa, selanjutnya akan menampilkan data siswa dengan nisn yang telah di-*input* sebelumnya.
 ### **Fitur Create**
 User mampu menambahkan data siswa dengan memasukkan ke dalam dataset berupa NISN, nama siswa, kelas, nilai tugas, nilai uts, dan nilai uas yang belum pernah tersimpan di dalam dataset yang telah ada.
 1. 
