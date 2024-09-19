@@ -31,13 +31,11 @@ Pada bagian ini, user dapat melihat keseluruhan data siswa. Terdiri dari NISN, n
 Sub menu ini menampilkan sebagian data siswa dengan memasukkan atau meng-*input* nisn siswa, selanjutnya akan menampilkan data siswa berupa nisn, nama, kelas, nilai tugas, nilai uts, dan nilai uas dari nisn yang telah di-*input* sebelumnya.
 
 ### **Fitur Create**
-User mampu menambahkan data siswa dengan memasukkan ke dalam dataset berupa NISN, nama siswa, kelas, nilai tugas, nilai uts, dan nilai uas yang belum pernah tersimpan di dalam dataset yang telah ada.
-1. 
-![image](https://github.com/user-attachments/assets/539749f0-a19d-4e31-b5d9-4e61bd801956)
-2. 
-![image](https://github.com/user-attachments/assets/2b59f321-5e67-4be8-9837-a9ff30580cdf)
-3. 
-![image](https://github.com/user-attachments/assets/0ad31f46-0149-4ddd-b42f-80f58758e6a3)
+Pada fitur ini, disajikan program penambahan data siswa dengan memasukkan ke dalam dataset berupa NISN, nama siswa, kelas, nilai tugas, nilai uts, dan nilai uas yang belum pernah tersimpan di dalam dataset yang telah ada. Berikut tampilan dari fitur create atau add new data pada program Data Nilai Siswa.
+
+   ![image](https://github.com/user-attachments/assets/539749f0-a19d-4e31-b5d9-4e61bd801956)
+   ![image](https://github.com/user-attachments/assets/2b59f321-5e67-4be8-9837-a9ff30580cdf)
+   ![image](https://github.com/user-attachments/assets/0ad31f46-0149-4ddd-b42f-80f58758e6a3)
 
 
 ### **Fitur Edit**
@@ -68,7 +66,7 @@ Apabila terdapat data yang ingin dihapus oleh user, fitur ini mampu menghapus da
    ![image](https://github.com/user-attachments/assets/18c9ebb8-b864-48cc-8a26-5f03a25a3f91)
 
 ### **Fitur Hitung Nilai Akhir (Tambahan)**
-Fitur ini ditambahkan guna mempermudah user dalam melakukan perhitungan nilai akhir siswa tanpa perlu menghitung manual secara satu persatu. Hanya dengan memasukkan nisn dari siswa yang ingin dicari nilai akhirnya maka akan muncul pada kolom terakhir nilai akhir dari siswa tersebut dengan menggunakan pembulatan 2 angka di belakang koma.
+Fitur ini ditambahkan guna mempermudah user dalam melakukan perhitungan nilai akhir siswa tanpa perlu menghitung manual secara satu persatu. Hanya dengan memasukkan nisn dari siswa yang ingin dicari nilai akhirnya, maka akan muncul pada kolom terakhir nilai akhir dari siswa tersebut dengan menggunakan pembulatan 2 angka di belakang koma.
 
    ![image](https://github.com/user-attachments/assets/fa6a1ee6-46a5-4d42-ac70-0aa592c6fc2a)
    ![image](https://github.com/user-attachments/assets/1f06d183-46d6-4abc-910d-be96192d75b6)
