@@ -67,8 +67,8 @@ Apabila terdapat data yang ingin dihapus oleh user, fitur ini mampu menghapus da
    ![image](https://github.com/user-attachments/assets/ffb091b2-6002-492d-9224-95f5370ee07a)
    ![image](https://github.com/user-attachments/assets/18c9ebb8-b864-48cc-8a26-5f03a25a3f91)
 
-### **Fitur Hitung Nilai Akhir**
-1.
-![image](https://github.com/user-attachments/assets/fa6a1ee6-46a5-4d42-ac70-0aa592c6fc2a)
-2. 
-![image](https://github.com/user-attachments/assets/1f06d183-46d6-4abc-910d-be96192d75b6)
+### **Fitur Hitung Nilai Akhir (Tambahan)**
+Fitur ini ditambahkan guna mempermudah user dalam melakukan perhitungan nilai akhir siswa tanpa perlu menghitung manual secara satu persatu. Hanya dengan memasukkan nisn dari siswa yang ingin dicari nilai akhirnya maka akan muncul pada kolom terakhir nilai akhir dari siswa tersebut dengan menggunakan pembulatan 2 angka di belakang koma.
+
+   ![image](https://github.com/user-attachments/assets/fa6a1ee6-46a5-4d42-ac70-0aa592c6fc2a)
+   ![image](https://github.com/user-attachments/assets/1f06d183-46d6-4abc-910d-be96192d75b6)
