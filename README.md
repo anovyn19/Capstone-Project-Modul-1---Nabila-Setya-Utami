@@ -11,7 +11,7 @@
 ## **Menu Utama**
 Berikut tampilan menu utama dari program *Data Nilai Siswa Mata Pelajaran IPA (Semester Genap) SMAN 17 Makassar*. Pada menu ini user dapat memilih menu yang diinginkan yang terdiri dari 6 sub menu, dapat dilihat pada gambar di bawah ini. 
 
-![image](https://github.com/user-attachments/assets/77cb2a7c-7f8d-4085-8819-83421e10ee3d)
+   ![image](https://github.com/user-attachments/assets/77cb2a7c-7f8d-4085-8819-83421e10ee3d)
 
 ## **Fitur-Fitur**
 ### **Fitur Read**
@@ -39,24 +39,24 @@ Pada fitur ini, disajikan program penambahan data siswa dengan memasukkan ke dal
 
 
 ### **Fitur Edit**
-Fitur ini mampu mengubah data yang telah ada menjadi data baru dengan cara memilih subjek data yang ingin diperbaharui, sehingga menampilkan informasi data baru yang telah di-*update*.
-1.
-![image](https://github.com/user-attachments/assets/22aa0a9e-e4b8-4d8c-9c8a-c3a37811df75)
-2.
-![image](https://github.com/user-attachments/assets/65809281-1473-4532-8a43-26b940f58df1)
-3. 
-![image](https://github.com/user-attachments/assets/a6fc6e11-e338-43b3-81c5-ccf7cd7839d9)
-4. 
-![image](https://github.com/user-attachments/assets/c887f26f-653b-48ad-a79d-abca067870ad)
-5.
-![image](https://github.com/user-attachments/assets/dde25d02-97ce-421b-a0f8-34cf4adb9387)
-6.
-![image](https://github.com/user-attachments/assets/16b8b359-9e2d-45db-af17-00906af7e88c)
-7. 
-![image](https://github.com/user-attachments/assets/25518db4-8d33-4826-afef-a99b9de640ad)
-8.
-![image](https://github.com/user-attachments/assets/d91dc46a-f6b4-4638-9b88-8b208d73e0d7)
+Fitur ini mampu mengubah, mengedit, atau meng-*update* data yang telah ada menjadi data baru dengan cara memilih subjek data yang ingin diperbaharui, sehingga menampilkan informasi data baru yang telah di-*update*. Dalam hal ini subjek yang bisa di ubah, yaitu nisn, nama, kelas, nilai tugas, nilai uts, dan nilai uas.
 
+1. Menu Tampilan Mengubah Data Siswa
+   ![image](https://github.com/user-attachments/assets/22aa0a9e-e4b8-4d8c-9c8a-c3a37811df75)
+2. Tampilan Mengubah NISN Siswa
+   ![image](https://github.com/user-attachments/assets/65809281-1473-4532-8a43-26b940f58df1)
+3. Tampilan Mengubah Nama Siswa
+   ![image](https://github.com/user-attachments/assets/a6fc6e11-e338-43b3-81c5-ccf7cd7839d9)
+4. Tampilan Mengubah Kelas Siswa
+   ![image](https://github.com/user-attachments/assets/c887f26f-653b-48ad-a79d-abca067870ad)
+5. Tampilan Mengubah Nilai Tugas Siswa
+   ![image](https://github.com/user-attachments/assets/dde25d02-97ce-421b-a0f8-34cf4adb9387)
+6. Tampilan Mengubah Nilai UTS Siswa
+   ![image](https://github.com/user-attachments/assets/16b8b359-9e2d-45db-af17-00906af7e88c)
+7. Tampilan Mengubah Nilai UAS Siswa
+   ![image](https://github.com/user-attachments/assets/25518db4-8d33-4826-afef-a99b9de640ad)
+8. Tampilan Keseluruhan Data yang Telah Diubah
+   ![image](https://github.com/user-attachments/assets/d91dc46a-f6b4-4638-9b88-8b208d73e0d7)
 
 ### **Fitur Delete**
 Apabila terdapat data yang ingin dihapus oleh user, fitur ini mampu menghapus data siswa yang tersimpan dengan hanya memasukkan NISN / Nomor Induk Siswa Nasional maka data dari siswa tersebut akan terhapus. Penghapusan data satu siswa hanya bisa dilakukan sekali kesempatan.
