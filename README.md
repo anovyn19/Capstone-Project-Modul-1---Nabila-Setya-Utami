@@ -16,20 +16,20 @@ Berikut tampilan menu utama dari program *Data Nilai Siswa Mata Pelajaran IPA (S
 
 ## **Fitur-Fitur**
 ### **Fitur Read**
-Dalam fitur read ini, user dapat melihat keseluruhan data nilai siswa dan juga dapat melihat sebagian data siswa dengan menginput NISN / Nomor Induk Siswa Nasional yg ingin dilihat detail datanya pada program yang telah dibuat.
+Dalam fitur read ini, *user* dapat melihat keseluruhan data nilai siswa dan juga dapat melihat sebagian data siswa dengan menginput NISN / Nomor Induk Siswa Nasional yg ingin dilihat detail datanya pada program yang telah dibuat.
 1. Menampilkan Keseluruhan Data Siswa 
 
    ![image](https://github.com/user-attachments/assets/049e6a2e-4f6e-4de7-81c6-8072c4e70523)
    ![image](https://github.com/user-attachments/assets/155b56c6-f40c-44b7-b969-d70fee18ad5d)
 
-Pada bagian ini, user dapat melihat keseluruhan data siswa. Terdiri dari NISN, nama, kelas, nilai tugas, nilai uts, dan nilai uas. Nilai NISN di program ini sebagai kunci yang akan digunakan untuk melakukan tindakan selanjutnya pada program.
+   Pada bagian ini, *user* dapat melihat keseluruhan data siswa. Terdiri dari NISN, nama, kelas, nilai tugas, nilai uts, dan nilai uas. Nilai NISN di program ini sebagai kunci yang akan digunakan untuk melakukan tindakan selanjutnya pada program.
 
 2. Menampilkan Sebagian Data Siswa 
 
    ![image](https://github.com/user-attachments/assets/4dd225f0-bd38-44c5-86af-6a0fdb160acd)
    ![image](https://github.com/user-attachments/assets/a4edb366-fb1d-4655-ad90-0a41d13020e8)
 
-Sub menu ini menampilkan sebagian data siswa dengan memasukkan atau meng-*input* nisn siswa, selanjutnya akan menampilkan data siswa berupa nisn, nama, kelas, nilai tugas, nilai uts, dan nilai uas dari nisn yang telah di-*input* sebelumnya.
+   Sub menu ini menampilkan sebagian data siswa dengan memasukkan atau meng-*input* nisn siswa, selanjutnya akan menampilkan data siswa berupa nisn, nama, kelas, nilai tugas, nilai uts, dan nilai uas dari nisn yang telah di-*input* sebelumnya.
 
 ### **Fitur Create**
 Pada fitur ini, disajikan program penambahan data siswa dengan memasukkan ke dalam dataset berupa NISN, nama siswa, kelas, nilai tugas, nilai uts, dan nilai uas yang belum pernah tersimpan di dalam dataset yang telah ada. Berikut tampilan dari fitur create atau add new data pada program Data Nilai Siswa.
@@ -77,14 +77,14 @@ Fitur ini mampu mengubah, mengedit, atau meng-*update* data yang telah ada menja
    ![image](https://github.com/user-attachments/assets/d91dc46a-f6b4-4638-9b88-8b208d73e0d7)
 
 ### **Fitur Delete**
-Apabila terdapat data yang ingin dihapus oleh user, fitur ini mampu menghapus data siswa yang tersimpan dengan hanya memasukkan NISN / Nomor Induk Siswa Nasional maka data dari siswa tersebut akan terhapus. Penghapusan data satu siswa hanya bisa dilakukan sekali kesempatan.
+Apabila terdapat data yang ingin dihapus oleh *user*, fitur ini mampu menghapus data siswa yang tersimpan dengan hanya memasukkan NISN / Nomor Induk Siswa Nasional maka data dari siswa tersebut akan terhapus. Penghapusan data satu siswa hanya bisa dilakukan sekali kesempatan.
 
    ![image](https://github.com/user-attachments/assets/ab097916-343d-4e7b-bc0f-6370641618e0)
    ![image](https://github.com/user-attachments/assets/ffb091b2-6002-492d-9224-95f5370ee07a)
    ![image](https://github.com/user-attachments/assets/18c9ebb8-b864-48cc-8a26-5f03a25a3f91)
 
 ### **Fitur Hitung Nilai Akhir (Tambahan)**
-Fitur ini ditambahkan guna mempermudah user dalam melakukan perhitungan nilai akhir siswa tanpa perlu menghitung manual secara satu persatu. Hanya dengan memasukkan nisn dari siswa yang ingin dicari nilai akhirnya, maka akan muncul pada kolom terakhir nilai akhir dari siswa tersebut dengan menggunakan pembulatan 2 angka di belakang koma.
+Fitur ini ditambahkan guna mempermudah *user* dalam melakukan perhitungan nilai akhir siswa tanpa perlu menghitung manual secara satu persatu. Hanya dengan memasukkan nisn dari siswa yang ingin dicari nilai akhirnya, maka akan muncul pada kolom terakhir nilai akhir dari siswa tersebut dengan menggunakan pembulatan 2 angka di belakang koma.
 
    ![image](https://github.com/user-attachments/assets/fa6a1ee6-46a5-4d42-ac70-0aa592c6fc2a)
    ![image](https://github.com/user-attachments/assets/1f06d183-46d6-4abc-910d-be96192d75b6)
