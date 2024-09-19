@@ -1,5 +1,5 @@
 # **Capstone Project Modul 1 (Data Nilai Siswa)**
-`### Nabila Setya Utami (JCDSOL-016)`
+`Nabila Setya Utami (JCDSOL-016)`
 
 > *Sebuah program yang dirancang untuk memudahkan user dalam mengakses data nilai siswa dalam kepentingan bidang akademik. Dalam hal ini mampu menampilkan keseluruhan dan sebagian nilai siswa, menambah, memperbaharui, dan menghapus data siswa. Serta mampu membantu memberikan perhitungan nilai akhir siswa dengan lebih cepat.*
 
